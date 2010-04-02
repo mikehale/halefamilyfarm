@@ -1,0 +1,57 @@
+--- 
+specs: 
+- rake: 
+    version: 0.8.7
+- sqlite3-ruby: 
+    version: 1.2.5
+- pg: 
+    version: 0.9.0
+- rails: 
+    version: 2.3.5
+- activerecord: 
+    version: 2.3.5
+- activeresource: 
+    version: 2.3.5
+- rack: 
+    version: 1.0.1
+- paperclip: 
+    version: 2.3.1.1
+- rdiscount: 
+    version: 1.6.3
+- actionpack: 
+    version: 2.3.5
+- actionmailer: 
+    version: 2.3.5
+- RedCloth: 
+    version: 4.2.3
+- activesupport: 
+    version: 2.3.5
+hash: a9c00f55f681fca5cc3e83e8ab49ff3ecc2ff6dc
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
+dependencies: 
+  sqlite3-ruby: 
+    version: ">= 0"
+    group: 
+    - :development
+  rails: 
+    version: = 2.3.5
+    group: 
+    - :default
+  pg: 
+    version: ">= 0"
+    group: 
+    - :production
+  paperclip: 
+    version: ">= 0"
+    group: 
+    - :default
+  rdiscount: 
+    version: ">= 0"
+    group: 
+    - :default
+  RedCloth: 
+    version: ">= 0"
+    group: 
+    - :default
