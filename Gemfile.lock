@@ -4,12 +4,16 @@ specs:
     version: 0.8.7
 - sqlite3-ruby: 
     version: 1.2.5
-- pg: 
-    version: 0.9.0
+- hassle: 
+    version: 0.0.1
 - rails: 
     version: 2.3.5
+- pg: 
+    version: 0.9.0
 - activerecord: 
     version: 2.3.5
+- haml: 
+    version: 2.2.22
 - activeresource: 
     version: 2.3.5
 - rack: 
@@ -18,15 +22,15 @@ specs:
     version: 2.3.1.1
 - rdiscount: 
     version: 1.6.3
-- actionpack: 
-    version: 2.3.5
 - actionmailer: 
+    version: 2.3.5
+- actionpack: 
     version: 2.3.5
 - RedCloth: 
     version: 4.2.3
 - activesupport: 
     version: 2.3.5
-hash: a9c00f55f681fca5cc3e83e8ab49ff3ecc2ff6dc
+hash: 7eba9fed72d12a7132d41481a3bed4a3bc49c1d1
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
@@ -35,6 +39,10 @@ dependencies:
     version: ">= 0"
     group: 
     - :development
+  hassle: 
+    version: ">= 0"
+    group: 
+    - :default
   rails: 
     version: = 2.3.5
     group: 
