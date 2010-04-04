@@ -1,0 +1,83 @@
+--- 
+specs: 
+- rake: 
+    version: 0.8.7
+- hassle: 
+    version: 0.0.1
+- sqlite3-ruby: 
+    version: 1.2.5
+- pg: 
+    version: 0.9.0
+- rails: 
+    version: 2.3.5
+- activerecord: 
+    version: 2.3.5
+- haml: 
+    version: 2.2.17
+- activeresource: 
+    version: 2.3.5
+- mime-types: 
+    version: "1.16"
+- rack: 
+    version: 1.0.1
+- paperclip: 
+    version: 2.3.1.1
+- rdiscount: 
+    version: 1.6.3
+- actionpack: 
+    version: 2.3.5
+- xml-simple: 
+    version: 1.0.12
+- actionmailer: 
+    version: 2.3.5
+- RedCloth: 
+    version: 4.2.3
+- activesupport: 
+    version: 2.3.5
+- aws-s3: 
+    version: 0.6.2
+- builder: 
+    version: 2.1.2
+hash: b7ae43c922e9bd5c96cabdeb440dfca234741b82
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
+dependencies: 
+  sqlite3-ruby: 
+    version: ">= 0"
+    group: 
+    - :development
+  hassle: 
+    version: ">= 0"
+    group: 
+    - :default
+  rails: 
+    version: = 2.3.5
+    group: 
+    - :default
+  pg: 
+    version: ">= 0"
+    group: 
+    - :production
+  haml: 
+    version: = 2.2.17
+    group: 
+    - :default
+  paperclip: 
+    version: ">= 0"
+    group: 
+    - :default
+  rdiscount: 
+    version: ">= 0"
+    group: 
+    - :default
+  RedCloth: 
+    version: ">= 0"
+    group: 
+    - :default
+  aws-s3: 
+    version: ">= 0"
+    require: 
+    - aws/s3
+    group: 
+    - :default
