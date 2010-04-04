@@ -38,7 +38,7 @@ class SettingsExtension < Radiant::Extension
   end
   
   def deactivate
-    admin.tabs.remove "Settings"
+    # admin.tabs.remove "Settings"
   end
   
   def load_default_settings_regions
