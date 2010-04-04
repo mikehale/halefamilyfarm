@@ -3,3 +3,4 @@ log/*
 db/*sqlite3*
 public/assets
 .bundle
+.DS_Store
