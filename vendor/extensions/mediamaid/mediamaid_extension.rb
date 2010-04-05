@@ -23,8 +23,12 @@
     Radiant::Config['mediamaid.small'] ||= "200x200"
     Radiant::Config['mediamaid.medium'] ||= "300x300"
     Radiant::Config['mediamaid.large'] ||= "400x400"
+
+    Radiant::Config['mediamaid.s3.enabled'] ||= "false"
+    Radiant::Config['mediamaid.s3.access_key_id'] ||= ""
+    Radiant::Config['mediamaid.s3.secret_access_key'] ||= ""
+    Radiant::Config['mediamaid.s3.bucket'] ||= ""
     
-  
     Admin::PagesController.class_eval do
 
       before_filter :set_custom_css
