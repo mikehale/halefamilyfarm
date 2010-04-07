@@ -1,7 +1,5 @@
-source :gemcutter
-
 gem "rails", "2.3.5"
-gem "rdiscount"
+gem "rdiscount", "1.6.3"
 gem "RedCloth"
 gem "paperclip"
 gem "hassle"

@@ -22,26 +22,25 @@ specs:
     version: 1.0.1
 - paperclip: 
     version: 2.3.1.1
-- rdiscount: 
-    version: 1.6.3
-- xml-simple: 
-    version: 1.0.12
-- actionmailer: 
-    version: 2.3.5
 - actionpack: 
     version: 2.3.5
+- rdiscount: 
+    version: 1.6.3
+- actionmailer: 
+    version: 2.3.5
+- xml-simple: 
+    version: 1.0.12
 - RedCloth: 
     version: 4.2.3
 - builder: 
     version: 2.1.2
-- activesupport: 
-    version: 2.3.5
 - aws-s3: 
     version: 0.6.2
-hash: 95d077bcad10f79ed291076513c8895644afa074
-sources: 
-- Rubygems: 
-    uri: http://gemcutter.org
+- activesupport: 
+    version: 2.3.5
+hash: 8b845c3df5c8db13b448547b5b384be3c34110ed
+sources: []
+
 dependencies: 
   sqlite3-ruby: 
     version: ">= 0"
@@ -64,7 +63,7 @@ dependencies:
     group: 
     - :default
   rdiscount: 
-    version: ">= 0"
+    version: = 1.6.3
     group: 
     - :default
   aws-s3: 
