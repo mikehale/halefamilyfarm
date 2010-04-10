@@ -1,6 +1,6 @@
 tmp/*
 log/*
-db/*sqlite3*
+*sqlite3*
 public/assets
 .bundle
 .DS_Store
