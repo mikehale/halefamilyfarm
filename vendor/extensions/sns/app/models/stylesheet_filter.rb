@@ -1,1 +1,0 @@
-class StylesheetFilter < TextAssetFilter; end
