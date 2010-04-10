@@ -12,9 +12,8 @@
 ActiveRecord::Schema.define(:version => 20091003095744) do
 
   create_table "config", :force => true do |t|
-    t.string "key",         :limit => 40, :default => "", :null => false
-    t.string "value",                     :default => ""
-    t.text   "description"
+    t.string "key",   :limit => 40, :default => "", :null => false
+    t.string "value",               :default => ""
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
@@ -36,14 +35,6 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
     t.integer  "lock_version",                 :default => 0
   end
 
-  create_table "mediamaids", :force => true do |t|
-    t.string   "mediamaid_file_name"
-    t.string   "mediamaid_content_type"
-    t.integer  "mediamaid_file_size"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "page_parts", :force => true do |t|
     t.string  "name",      :limit => 100
     t.string  "filter_id", :limit => 25
@@ -51,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
     t.integer "page_id"
   end
 
-  add_index "page_parts", ["name", "page_id"], :name => "parts_by_page"
+  add_index "page_parts", ["page_id", "name"], :name => "parts_by_page"
 
   create_table "pages", :force => true do |t|
     t.string   "title"
@@ -73,9 +64,9 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
   end
 
   add_index "pages", ["class_name"], :name => "pages_class_name"
-  add_index "pages", ["parent_id", "slug"], :name => "pages_child_slug"
   add_index "pages", ["parent_id"], :name => "pages_parent_id"
-  add_index "pages", ["status_id", "virtual"], :name => "pages_published"
+  add_index "pages", ["slug", "parent_id"], :name => "pages_child_slug"
+  add_index "pages", ["virtual", "status_id"], :name => "pages_published"
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id"
@@ -98,20 +89,6 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
   end
 
   add_index "snippets", ["name"], :name => "name", :unique => true
-
-  create_table "text_assets", :force => true do |t|
-    t.string   "class_name",    :limit => 25
-    t.string   "name",          :limit => 100
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "created_by_id"
-    t.integer  "updated_by_id"
-    t.integer  "lock_version"
-    t.string   "filter_id",     :limit => 25
-  end
-
-  add_index "text_assets", ["class_name", "name"], :name => "index_text_assets_on_name_and_class_name"
 
   create_table "users", :force => true do |t|
     t.string   "name",          :limit => 100
