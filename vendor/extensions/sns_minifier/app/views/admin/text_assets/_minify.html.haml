@@ -1,0 +1,4 @@
+- if model.minifiable?
+  %p
+    %label{:for=>"#{model_symbol}_minify"} Minify Output?
+    =check_box(model_symbol, "minify")
