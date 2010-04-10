@@ -5,5 +5,10 @@ gem "paperclip"
 gem "hassle"
 gem "aws-s3", :require => "aws/s3"
 
-gem "pg", :group => :production
-gem "sqlite3-ruby", :group => :development
+group :production do
+  gem "pg" 
+end
+
+group :development do
+  gem "sqlite3-ruby"
+end
